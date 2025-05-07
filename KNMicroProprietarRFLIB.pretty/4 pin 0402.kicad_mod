@@ -1,0 +1,109 @@
+(footprint "4 pin 0402"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -1.3 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "99ede9a7-8fc8-4b52-b73f-dafcb03a8de9")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "4 pin 0402"
+		(at 0 1.1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "2bb5f446-0247-4e8e-ab93-32a22a88467a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c293d846-5e7c-4bdd-bb5e-4a768408e444")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4c053a36-155e-4cc2-9c7e-b39de6cccf1e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "af8b58f8-5ee2-4099-8c88-434a3c7061ef")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_rect
+		(start -0.5 -0.25)
+		(end 0.5 0.25)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(fill none)
+		(layer "Dwgs.User")
+		(uuid "e7e276ce-7587-48dd-a923-1a6d2509eb1f")
+	)
+	(pad "1" smd rect
+		(at 0.25 -0.225)
+		(size 0.3 0.25)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(thermal_bridge_angle 45)
+		(uuid "770ad940-9151-443b-80dd-acb9ed4fed8c")
+	)
+	(pad "2" smd rect
+		(at -0.25 -0.225)
+		(size 0.3 0.25)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(thermal_bridge_angle 45)
+		(uuid "461532ef-904b-4d3f-9746-dcb25ffcc42c")
+	)
+	(pad "3" smd rect
+		(at -0.25 0.225)
+		(size 0.3 0.25)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(thermal_bridge_angle 45)
+		(uuid "10536821-f3c5-427e-b608-ada5ace2e8ad")
+	)
+	(pad "4" smd rect
+		(at 0.25 0.225)
+		(size 0.3 0.25)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(thermal_bridge_angle 45)
+		(uuid "78a9bc20-99a2-4ecc-a34a-f905bb58e133")
+	)
+)
