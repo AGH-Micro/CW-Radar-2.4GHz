@@ -14,6 +14,7 @@ def calculate_delta_f(peak_index):
     return sample_rate / SAMPLE_SIZE * peak_index
 
 def find_peak(spectrum):
+    # dla stałej częstotliwośli, ? 1 indeks
     # Для пропуску сталої, беремо від 1 індекса
     max_index = 1
     for i in range(2, len(spectrum) // 2):
@@ -41,9 +42,13 @@ def process_samples():
     
     # Resetowanie bufora i licznika
     sample_count = 0
-    sample_buffor.fill(0)
+    sample_buffer.fill(0)
     
     return delta_f
+
+def Gamma():
+        
+    return gamma  
 
 def main():
     global sample_count
@@ -68,6 +73,13 @@ def main():
             if sample_count >= SAMPLE_SIZE:
                 delta_f = process_samples()
                 # Tutaj cos mozna kombinowac z delta_f
-
+                
+                # Policzenie prędkości na podstawie szpilki
+                # v = c / ( 1 + 2*( f_generatora / delta_f))
+                f_gen = 2.4 * 10^9
+                c = 3*10^8
+                v = c / (1 + 2 * (f_gen / delta_f))
+                #Można dodać coś w rodzaju wyświetlenia / przekazanie danych na np. laptopa itp itd
+                
 if __name__ == "__main__":
     main()
